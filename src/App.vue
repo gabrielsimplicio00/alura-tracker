@@ -8,6 +8,9 @@
       <div class="lista">
         <Tarefa v-for="(tarefa, index) in tarefas" :key="index" :tarefa="tarefa"/>
       </div>
+      <Box>
+        Você não está muito produtivo hoje :(
+      </Box>
     </div>
   </main>
 </template>
@@ -15,6 +18,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import BarraLateral from './components/BarraLateral.vue';
+import Box from './components/Box.vue';
 import Formulario from './components/Formulario.vue';
 import Tarefa from './components/Tarefa.vue';
 import ITarefa from './interfaces/ITarefa'
@@ -24,7 +28,8 @@ export default defineComponent({
   components: {
     BarraLateral,
     Formulario,
-    Tarefa
+    Tarefa,
+    Box
 },
 data() {
   return {
