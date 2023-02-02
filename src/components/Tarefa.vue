@@ -31,3 +31,9 @@ export default defineComponent({
     }
 })
 </script>
+
+<style scoped>
+.column{
+  color: black;
+}
+</style>
